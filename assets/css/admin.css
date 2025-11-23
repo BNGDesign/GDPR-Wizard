@@ -1,0 +1,69 @@
+:root{--sidebar-width:260px;--header-height:70px;--primary-color:#2563eb;--sidebar-bg:#141414;--sidebar-hover:#334155}
+*{margin:0;padding:0;box-sizing:border-box}
+@font-face {font-family:'Yanone';font-style:normal;font-weight:300;font-display:swap; src:url(YanoneKaffeesatz-Regular.ttf) format('ttf')}
+body{font-family: "Yanone", sans-serif;background:#f1f5f9}
+/* Sidebar */
+.sidebar{position:fixed;top:0;left:0;width:var(--sidebar-width);height:100vh;background:var(--sidebar-bg);color:white;z-index:1000;overflow-y:auto}
+.sidebar-brand{padding:20px;border-bottom:1px solid rgba(255,255,255,0.1);text-align:center;font-family: 'Yanone'}
+.sidebar-brand h3{font-size:1.25rem;font-weight:700;margin:0;display:flex;align-items:center;justify-content:center;gap:10px}
+.sidebar-brand i{font-size:1.5rem;color:var(--primary-color)}
+.sidebar-menu{padding:20px 0}
+.menu-section{margin-bottom:30px}
+.menu-section-title{padding:0 20px;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#94a3b8;margin-bottom:10px}
+.menu-item{display:block;padding:6px 10px;color:#cbd5e1;text-decoration:none;transition:all 0.3s;border-left:3px solid transparent}
+.menu-item:hover{background:var(--sidebar-hover);color:white}
+.menu-item.active{background:var(--sidebar-hover);border-left-color:var(--primary-color);color:white}
+.menu-item i{margin-right:12px;width:20px;text-align:center}
+/* Main Content */
+.main-content{margin-left:var(--sidebar-width);min-height:100vh}
+/* Top Header */
+.top-header{background:white;height:var(--header-height);border-bottom:1px solid #e2e8f0;display:flex;align-items:center;justify-content:space-between;padding:0 30px;position:sticky;top:0;z-index:999}
+.header-title h1{font-size:1.5rem;font-weight:600;margin:0;color:#1e293b}
+.header-actions{display:flex;align-items:center;gap:20px}
+.user-dropdown{display:flex;align-items:center;gap:10px;cursor:pointer;padding:8px 15px;border-radius:8px;transition:background 0.3s}
+.user-dropdown:hover{background:#f1f5f9}
+.user-avatar{width:40px;height:40px;border-radius:50%;background:var(--primary-color);display:flex;align-items:center;justify-content:center;color:white;font-weight:600}
+.user-info{text-align:right}
+.user-name{font-weight:600;font-size:0.9rem;color:#1e293b}
+.user-role{font-size:0.75rem;color:#64748b}
+/* Content Area */
+.content-area{padding:30px}
+/* Cards */
+.card{border:none;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.1);margin-bottom:20px}
+.card-header{background:white;border-bottom:1px solid #e2e8f0;padding:20px;border-radius:12px 12px 0 0}
+.card-header h5{margin:0;font-size:1.1rem;font-weight:600;display:flex;align-items:center;gap:10px}
+.card-body{padding:20px}
+/* Stats Cards */
+.stat-card{background:white;border-radius:12px;padding:25px;display:flex;align-items:center;gap:20px;box-shadow:0 1px 3px rgba(0,0,0,0.1);transition:transform 0.3s}
+.stat-card:hover{transform:translateY(-5px);box-shadow:0 4px 12px rgba(0,0,0,0.15)}
+.stat-icon{width:60px;height:60px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.75rem}
+.stat-primary .stat-icon{background:#dbeafe;color:#2563eb}
+.stat-success .stat-icon{background:#d1fae5;color:#10b981}
+.stat-info .stat-icon{background:#e0f2fe;color:#0ea5e9}
+.stat-warning .stat-icon{background:#fef3c7;color:#f59e0b}
+.stat-value{font-size:2rem;font-weight:700;color:#1e293b}
+.stat-label{font-size:0.875rem;color:#64748b;font-weight:500}
+/* Activity List */
+.activity-list{padding:15px}
+.activity-item{display:flex;align-items:flex-start;gap:15px;padding:12px 0;border-bottom:1px solid #f1f5f9}
+.activity-item:last-child{border-bottom:none}
+.activity-icon{width:35px;height:35px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.activity-icon.bg-success{background:#d1fae5;color:#10b981}
+.activity-icon.bg-danger{background:#fee2e2;color:#ef4444}
+.activity-title{font-weight:600;font-size:0.9rem;color:#1e293b}
+.activity-meta{font-size:0.75rem;color:#94a3b8}
+/* Tables */
+.table{font-size:0.9rem}
+.table thead{background:#f8fafc;font-weight:600;color:#475569}
+.table thead th{border-bottom:2px solid #e2e8f0;padding:15px}
+.table tbody td{padding:15px;vertical-align:middle}
+/* Buttons */
+.btn{border-radius:8px;padding:4px 8px;font-weight:600;transition:all 0.3s}
+.btn-primary{background:var(--primary-color);border:none}
+.btn-primary:hover{background:#1e40af;transform:translateY(-2px)}
+.yanone{
+  font-family: "Yanone", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
